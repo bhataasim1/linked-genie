@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
-const BACKEND_URL = process.env.PLASMO_PUBLIC_BACKEND_URL;
+// const BACKEND_URL = process.env.PLASMO_PUBLIC_BACKEND_URL;
+const BACKEND_URL = 'https://linked-genie.onrender.com';
 
 const LinkedInCommenter = () => {
   useEffect(() => {
