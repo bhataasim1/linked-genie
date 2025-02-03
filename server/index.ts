@@ -41,6 +41,10 @@ class LinkedGenieServer {
     this.app.post('/api/generate-comments', (req: express.Request, res: express.Response) => {
       this.handleGenerateComments(req, res);
     });
+
+    this.app.get('/', (req: express.Request, res: express.Response) => {
+      res.send('LinkedGenie API');
+    });
   }
 
   private async generateComment(postData: string) {
@@ -48,7 +52,7 @@ class LinkedGenieServer {
       generationConfig: this.generationConfig,
       history: [],
     });
-    
+
     const result = await chatSession.sendMessage(postData);
     const response = result.response.text();
     const cleanResponse = response.replace(/```.*?\n|\n```/g, '').trim();
@@ -59,7 +63,7 @@ class LinkedGenieServer {
   private async handleGenerateComments(req: express.Request, res: express.Response) {
     try {
       const { postData } = req.body;
-      
+
       if (!postData) {
         return res.status(400).json({ error: 'Post data is required' });
       }
