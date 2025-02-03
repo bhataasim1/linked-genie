@@ -1,0 +1,1 @@
+export const PROPMT = "I'll provide you with LinkedIn post content, and you need to generate 5 well-crafted and engaging comments based on the post content. Please return the comments in an array format.";
