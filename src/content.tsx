@@ -34,7 +34,8 @@ const LinkedInCommenter = () => {
 
     // Create icon element
     const icon = document.createElement('div');
-    icon.innerHTML = '💡';
+    icon.innerHTML = '🧞‍♂️';
+    icon.title = 'Linked Genie - AI-powered LinkedIn comment suggestions';
     icon.style.cursor = 'pointer';
     icon.style.marginTop = '-1px';
     icon.style.marginLeft = '8px';

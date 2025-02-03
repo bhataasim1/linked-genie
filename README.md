@@ -1,33 +1,43 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+## Linked Genie - A LinkedIn Automation Tool
 
-## Getting Started
+Linked Genie is a browser extension that automates the process of generating comments for LinkedIn posts by analyzing the content of the post. This tool helps users to engage more effectively on LinkedIn by providing relevant and thoughtful comments.
 
-First, run the development server:
+### Features
+- Automatically generates comments for LinkedIn posts based on content analysis.
+- Easy to install and use as a browser extension.
+- Enhances user engagement on LinkedIn.
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
+### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/bhataasim1/linked-genie.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd linked-genie
+    ```
+3. Install the necessary dependencies:
+    ```bash
+    pnpm install
+    ```
+4. Build the extension:
+    ```bash
+    pnpm run build
+    ```
+5. Load the extension in your browser:
+    - Open your browser and go to the extensions page.
+    - Enable "Developer mode".
+    - Click on "Load unpacked" and select the `build/chrome-mv3-prod` folder from the project directory.
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+### Usage
+1. Open LinkedIn and navigate to a post.
+2. Click on the post comment.
+3. You will see a "Genie" 🧞‍♂️ icon in the comment box. Click on the icon.
+3. The extension will analyze the post content and generate a comment.
+4. Review and edit the comment if necessary, then post it.
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+### Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
-
-## Making production build
-
-Run the following:
-
-```bash
-pnpm build
-# or
-npm run build
-```
-
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
-
-## Submit to the webstores
-
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+### License
+This project is licensed under the MIT License.
