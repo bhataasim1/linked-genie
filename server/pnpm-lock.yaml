@@ -23,6 +23,9 @@ importers:
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.13.0)(typescript@5.7.3)
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
     devDependencies:
       '@types/cors':
         specifier: ^2.8.17
